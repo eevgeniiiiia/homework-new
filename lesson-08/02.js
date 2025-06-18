@@ -4,6 +4,9 @@
  */
 
 function isNumeric(str) {
+     if(str === ' '){
+        return false;
+    }
     // проверяет, является ли результат NaN.
     return !isNaN(Number(str));
 }
